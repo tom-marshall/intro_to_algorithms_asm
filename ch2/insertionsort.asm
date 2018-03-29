@@ -45,7 +45,6 @@ section .text
     extern printf
     global main
 
-
 ; Registers:
 ;   rdi: number currently being sorted
 ;   rsi: numbers less than current
@@ -73,14 +72,12 @@ main:
     dec ecx
     jge .innerloop
 
-
 .endouterloop:
     inc ebx
     cmp ebx, arrsz
     jl .outerloop
 
 .skipswap:
-
     xor eax, eax
     jmp .end
 
