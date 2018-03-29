@@ -81,12 +81,13 @@ main:
     xor eax, eax
     jmp .end
 
-.print:
-    lea rdi, [pfmt]
-    movsxd rsi, dword [array+ebx*4]
-    xor eax, eax
-    call printf
-    xor eax, eax
+
+; TODO implement printing array
+;.print:
+;    lea rdi, [pfmt]
+;    movsxd rsi, dword [array+ebx*4]
+;    xor eax, eax
+;    call printf
 
 .end
     leave
